@@ -1,0 +1,168 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#142036;
+}
+
+nav{
+	width:100%;
+}
+
+.navbar{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	place-items:center;
+	padding:35px 40px;
+	font-size:24px;
+	color:white;
+	font-family:"dosis";
+	letter-spacing:2px;
+	font-weight:300;
+	line-height:24px;
+
+}
+
+.right{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	place-items:center;
+	width:350px;
+	
+}
+.left{
+	cursor:pointer;
+	transition:0.3s;	
+    text-transform: capitalize;
+}
+
+
+.right div{
+	cursor:pointer;
+	transition:0.4s;
+}
+.right div::first-letter{
+	font-size:120%;
+}
+
+
+.left:hover, .right div:hover{
+	opacity:0.5;
+}
+
+.l-verticle{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	position:absolute;
+	bottom:15%;
+	color:white;
+}
+
+.scroll{
+	font-family:Arial ;
+	font-size:14px;
+	letter-spacing:4.2px;
+	transform: rotate(90deg);
+}
+.v-line{
+	background-color:white;
+	height:60px;
+	width:2px;
+	position:absolute;
+	left:62.5px;
+	bottom:-132px;
+}
+.main{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	position:absolute;
+	color:white;
+	left:10%;
+	top:30%;
+	overflow:hidden;
+	
+	
+	
+}
+
+
+.name{
+	font-family:Montserrat,sans-serif;
+	font-size:clamp(3rem,1rem + 10vw,6rem);
+	letter-spacing:12px;
+	position:relative;
+	left:-100%;
+	animation-name:txt;
+	animation-duration:1.5s;
+	animation-fill-mode: forwards;
+	
+	
+}
+
+.h-line{
+	margin:30px 0;
+}
+
+.hl-1{
+	background-color:red;
+	width:100px;
+	height:5px;
+	border-radius:10px;
+	position:relative;
+	left:-100%;
+	animation-name:txt;
+	animation-duration:1.5s;
+	animation-fill-mode: forwards;
+	animation-delay:0.3s;
+	
+}
+.hl-2{
+	background-color:red;
+	width:100px;
+	height:5px;
+	border-radius:10px;
+	position:relative;
+	left:-100%;
+	animation-name:hl2;
+	animation-duration:1.5s;
+	animation-fill-mode: forwards;
+	animation-delay:0.3s;
+	margin-top:15px;
+	
+}
+
+.description{
+	font-family:Montserrat,sans-serif;
+	font-size:clamp(0.6rem,0.8rem + 0.8vw,1.3rem);
+	letter-spacing:2.8px;
+	line-height:35px;
+	position:relative;
+	left:-100%;
+	animation-name:txt;
+	animation-duration:1.5s;
+	animation-fill-mode: forwards;
+	animation-delay:0.75s;
+	
+}
+
+@keyframes txt{
+	to{left:0;}
+}
+@keyframes hl2{
+	to{left:50px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
